@@ -2,35 +2,41 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Chọn tour yêu thích</title>
+    <title>Đặt tour</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Chọn tour yêu thích</h1>
+<header>TRAVEL WEBSITE</header>
 
-    <div class="container">
+<nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="tour.html">Tour</a>
+    <a href="booking.html">Đặt tour</a>
+</nav>
 
-        <div class="tour" id="dalat">
-            <h3>Tour Đà Lạt</h3>
-            <p>Thành phố ngàn hoa, khí hậu mát mẻ.</p>
-            <button onclick="chonTour('Đà Lạt', 'dalat')">Chọn tour</button>
-        </div>
+<h2>Đặt tour</h2>
 
-        <div class="tour" id="phuquoc">
-            <h3>Tour Phú Quốc</h3>
-            <p>Nghỉ dưỡng biển đảo, phù hợp cho gia đình.</p>
-            <button onclick="chonTour('Phú Quốc', 'phuquoc')">Chọn tour</button>
-        </div>
+<form onsubmit="return kiemTraForm()">
+    <input type="text" id="name" placeholder="Họ tên"><br>
+    <input type="text" id="phone" placeholder="SĐT"><br>
+    <input type="email" id="email" placeholder="Email"><br>
 
-        <div class="tour" id="hanoi">
-            <h3>Tour Hà Nội</h3>
-            <p>Tham quan thủ đô, phố cổ và các di tích lịch sử.</p>
-            <button onclick="chonTour('Hà Nội', 'hanoi')">Chọn tour</button>
-        </div>
+    <select id="tour">
+        <option value="">Chọn điểm đến</option>
+        <option>Đà Lạt</option>
+        <option>Phú Quốc</option>
+    </select><br>
 
-    </div>
+    <input type="date" id="date"><br>
+    <input type="number" id="people" placeholder="Số người"><br>
+    <textarea id="note" placeholder="Ghi chú"></textarea><br>
 
-    <p id="thongbao">Bạn chưa chọn tour nào.</p>
+    <button type="submit">Đặt tour</button>
+</form>
+
+<p id="msg"></p>
+
+<script src="scr.js"></script>
 </body>
 </html>
