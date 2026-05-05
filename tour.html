@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tour</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<header>TRAVEL WEBSITE</header>
+
+<nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="tour.html">Tour</a>
+    <a href="booking.html">Đặt tour</a>
+</nav>
+
+<h2>Danh sách tour</h2>
+
+<div class="card-container">
+    <div class="card">
+        <img src="https://vietnamtour.in/wp-content/uploads/VNIN_Da-Lat_1.jpg">
+        <h3>Đà Lạt</h3>
+        <p>3 ngày 2 đêm</p>
+        <p>3.000.000đ</p>
+        <button onclick="chonTour('Đà Lạt')">Chọn tour</button>
+    </div>
+
+    <div class="card">
+        <img src="https://vietnam.travel/sites/default/files/2022-10/shutterstock_1660147075.jpg">
+        <h3>Phú Quốc</h3>
+        <p>4 ngày 3 đêm</p>
+        <p>5.000.000đ</p>
+        <button onclick="chonTour('Phú Quốc')">Chọn tour</button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.natgeofe.com/n/39181071-db55-488f-bd54-707759ad924e/river-hanoi-vietnam.jpg">
+        <h3>Hà Nội</h3>
+        <p>2 ngày 1 đêm</p>
+        <p>2.000.000đ</p>
+        <button onclick="chonTour('Hà Nội')">Chọn tour</button>
+    </div>
+
+    <div class="card">
+        <img src="https://a.cdn-hotels.com/gdcs/production126/d1337/a4fd6b39-16b6-4230-bcf1-155a0d9a72c1.jpg">
+        <h3>Đà Nẵng</h3>
+        <p>3 ngày 2 đêm</p>
+        <p>4.000.000đ</p>
+        <button onclick="chonTour('Đà Nẵng')">Chọn tour</button>
+    </div>
+</div>
+
+<p id="thongbao"></p>
+
+<script src="scr.js"></script>
 </body>
 </html>
